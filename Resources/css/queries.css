@@ -1,0 +1,524 @@
+/* @media queries */
+/* max width 1024px ipad  .article--1 p {
+    line-height: 1.5em;
+} */
+
+/****/
+@media screen and (min-width: 1401px) and (min-height:900px) {
+     #svg {
+        width: 900px;
+        height: 700px;
+
+    }
+    .cover-all h1 {
+        font-size: 8.5vw;
+        margin-top: 5vh;
+
+    }
+    .cover{
+        height: 80px;
+        padding-top: 26px;
+    }
+    .arrow--position {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #Layer_1 {
+        width: 22vw;
+    }
+
+    #svg {
+        width: 800px;
+        height: 700px;
+
+    }
+
+    .cover-all h1 {
+        margin-top: 70px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 1036px) {
+    .all--portfolio {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .portfolio--box {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    #Layer_1 {
+        width: 27vw;
+        height: 12vh;
+    }
+
+
+    .overlay a {
+        width: 90%;
+        font-size: 4vw;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-height: 1366px) {
+    #svg {
+        width: 700px;
+        height: 300px;
+
+    }
+
+
+    .cover-all h1 {
+        font-size: 80px;
+        margin-top: 120px;
+    }
+}
+
+
+/*****/
+
+@media screen and (max-width: 900px) {
+    #svg {
+        width: 700px;
+        height: 600px;
+    }
+
+    .about::before,
+    .portfolio::before,
+    .contact::before {
+        top: 36%;
+    }
+
+
+    .cover-all span {
+        font-size: 22px;
+    }
+
+    .black,
+    .movi {
+        padding-bottom: 15px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 809px) {
+
+    .ul--1 li {
+        width: 20%;
+    }
+
+    .ul--1 li img {
+        width: 100%;
+    }
+
+    .button button {
+        width: 16vw;
+    }
+
+    .h1--tag {
+        font-size: 18px;
+    }
+
+    .article--1 {
+        font-size: 14px;
+    }
+}
+
+
+/* max width 600px phone */
+@media screen and (max-width: 698px) {
+    #svg {
+        width: 700px;
+        height: 700px;
+    }
+
+    .button a {
+        font-size: 14px;
+    }
+
+    .cover-all h1 {
+        font-size: 50px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .cover-all span {
+        font-size: 14px;
+    }
+
+    .cover h3 {
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .box {
+        width: 100px;
+        height: 50px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    #svg {
+        width: 600px;
+        height: 600px;
+    }
+
+    .arrow--position {
+        height: 60px;
+        bottom: 1px;
+        left: 0;
+    }
+
+    .about:hover::before,
+    .portfolio:hover::before,
+    .contact:hover::before,
+    .about:active::before,
+    .portfolio:active::before,
+    .contact:active::before {
+        display: block;
+        animation-play-state: paused;
+    }
+
+    .arrow--position {
+        display: none;
+    }
+
+    .portfolio--box {
+
+        height: 300px;
+    }
+
+    .svgNum {
+        width: 20vh;
+        height: 15vh;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 551px) {
+    #svg {
+        width: 500px;
+        height: 650px;
+
+    }
+
+    .button button {
+        width: 18vw;
+        height: 50px;
+    }
+
+    .ul--1 li {
+        margin-left: -10px;
+    }
+
+
+    .h1--tag {
+        font-size: 14px;
+    }
+
+    .article--1,
+    .span {
+        font-size: 8px;
+    }
+
+    .portfolio--box1 h1 {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .movi {
+        padding-top: 18px;
+    }
+
+
+}
+
+@media screen and (max-width: 475px) {
+    #svg {
+        width: 400px;
+        height: 600px;
+    }
+
+    .weblink--site {
+        width: 50%;
+    }
+
+    .portfolio--box1 h1 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .ul--1 li {
+        width: 20%;
+        margin-left: -16px;
+    }
+}
+
+@media only screen and (max-width:414px) and (max-height: 736px) {
+    #svg {
+        width: 400px;
+        height: 700px;
+    }
+
+    .works {
+        margin-bottom: 20px;
+    }
+
+    .black,
+    .movi {
+        padding-bottom: 20px;
+    }
+
+    .article--1,
+    .span {
+        font-size: 8px;
+    }
+
+    .ul--1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ul--1 li {
+        width: 30%;
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #Layer_1 {
+        width: 28vw;
+    }
+
+    .cover-all h1 {
+        margin-top: 120px;
+        font-size: 40px;
+
+    }
+
+
+    .arrow--position {
+        display: none;
+    }
+
+    figcaption,
+    .button button a {
+        font-size: 8px;
+    }
+
+    .portfolio--box {
+
+        height: 250px;
+    }
+
+    .portfolio--box h1 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .svgNum {
+        width: 18vh;
+
+    }
+
+    .ul--1 li {
+        width: 30%;
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 399px) {
+    #Layer_1 {
+        width: 36vw;
+    }
+
+    .cover-all h1 {
+        font-size: 40px;
+
+    }
+
+    .arrow--position {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:375px) and (max-height: 667px) {
+    .box1 {
+        top: 40%;
+    }
+
+    #svg {
+        width: 400px;
+        height: 580px;
+
+    }
+
+    .works {
+        margin-bottom: 20px;
+    }
+
+    .cover-all h1 {
+        font-size: 40px;
+        margin-top: 12px;
+
+    }
+
+    .button button a {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 360px) and (max-height:640px) {
+    #Layer_1 {
+        width: 28vw;
+    }
+
+    #svg {
+        width: 300px;
+        height: 580px;
+
+    }
+
+    .box1 {
+        top: 30%;
+    }
+
+    .cover-all h1 {
+        font-size: 40px;
+        margin-top: 12px;
+
+    }
+
+    .box {
+        margin-top: 2px;
+        width: 60px;
+        height: 38px;
+    }
+
+    .cover {
+        padding-top: 12px;
+    }
+
+    .cover h3 {
+        font-size: 12px;
+    }
+
+    .arrow--position {
+        display: none;
+    }
+
+
+
+    .h1--tag {
+        font-size: 12px;
+    }
+
+    .article--1,
+    .span {
+        font-size: 8px;
+    }
+
+    .ul--1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ul--1 li {
+        width: 30%;
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+
+    .button button {
+        width: 18vw;
+        height: 40px;
+    }
+
+    .button button a {
+        font-size: 8px;
+    }
+
+    .works {
+        margin-bottom: 20px;
+    }
+
+    .black,
+    .movi {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover-all h1 {
+        font-size: 20px;
+        margin-top: 12px;
+
+    }
+
+    figcaption {
+        font-size: 8px;
+    }
+
+    .ul--1 li {
+        margin-top: -20px;
+    }
+
+
+
+}
+
+
+
+/* iphone5 portrait */
+
+/**********************************************MAIN PORTFOLIO SECTION ********************/
+/************portrait iphon5  **********/
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .section {
+        margin-top: 10;
+        padding: 10px 0 0 0;
+    }
+
+    .all--portfolio {
+        margin-top: 0;
+    }
+}
+
+/*********************phones with max width up to 375px *********/
+@media screen and (max-width: 375px) {
+    .section {
+        margin-top: 10;
+        padding: 10px 0 0 0;
+    }
+
+    .all--portfolio {
+        margin-top: 0;
+    }
+}

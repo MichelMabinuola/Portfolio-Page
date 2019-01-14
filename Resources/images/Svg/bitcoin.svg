@@ -1,0 +1,19 @@
+<svg id="bit--site"  xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1100 700">
+    <style>
+        .st3 {
+            font-family: &apos;
+            PTSerif-Regular&apos;
+        }
+
+        .st4 {
+            font-size: 224.8318px
+        }
+        
+
+    </style>
+    <g id="coin--jumps">
+        <ellipse id="cover--color2" transform="translate(-.507 .54)" cx="308.3" cy="290.1" rx="138" ry="125.7" fill="#fac538" stroke="#fcfafa" />
+        <ellipse id="inner--strokee" transform="translate(-.507 .54)" cx="308.3" cy="290.1" rx="120.7" ry="109.9" fill="none" stroke="#ea8a0a" />
+        <g id="b-letter"><text transform="matrix(1.0118 -.00177 .00175 1 244.204 371.534)" class="st3 st4" fill="#fff">B</text><text transform="matrix(1.0118 -.00177 .00175 1 244.204 371.534)" class="st3 st4" fill="none" stroke="#fff">B</text></g>
+    </g><text fill="#fff" transform="translate(487.041 343.24)" font-size="149.226" font-family="MyriadPro-Regular">BITwallet</text>
+</svg>
