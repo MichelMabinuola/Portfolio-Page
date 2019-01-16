@@ -151,7 +151,11 @@
 
 
 /* max width 600px phone */
-@media screen and (max-width: 698px) {
+@media screen and (max-width: 702px) {
+    #Layer_1 {
+        width: 250px;
+    }
+
     #svg {
         width: 700px;
         height: 700px;
@@ -184,6 +188,11 @@
 
     .portfolio--box {
         height: 350px;
+    }
+
+    .movi,
+    .black {
+        padding-top: 18px;
     }
 
 
@@ -322,7 +331,8 @@
 
 @media screen and (max-width: 414px) {
     #Layer_1 {
-        width: 28vw;
+        width: 180px;
+        height: 100px;
     }
 
     .cover-all h1 {
@@ -367,9 +377,6 @@
 
 
 @media screen and (max-width: 399px) {
-    #Layer_1 {
-        width: 36vw;
-    }
 
     .cover-all h1 {
         font-size: 40px;
