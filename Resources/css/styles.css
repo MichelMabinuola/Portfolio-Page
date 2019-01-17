@@ -325,13 +325,6 @@ body,
     margin: 20px auto;
 
 }
-
-.button a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 24px;
-}
-
 .button button {
     border-radius: 12px;
     border: 0.5px solid #fab131;
@@ -344,6 +337,8 @@ body,
     -webkit-transition: background .5s ease;
     -mos-transition: background .5s ease;
     cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .button button:hover {
