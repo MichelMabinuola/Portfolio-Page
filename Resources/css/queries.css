@@ -151,7 +151,7 @@
 
 
 /* max width 600px phone */
-@media screen and (max-width: 702px) {
+@media screen and (max-width: 712px) {
     #Layer_1 {
         width: 250px;
     }

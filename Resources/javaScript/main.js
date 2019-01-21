@@ -331,7 +331,7 @@ $(document).ready(function () {
     })
 
 
-    $('.bitcoin').on('click', () => {
+    $('.bit').on('click', () => {
     
      window.open('https://quizzical-clarke-a9d671.netlify.com/', '_blank');
 
