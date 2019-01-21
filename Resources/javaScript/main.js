@@ -9,7 +9,8 @@ $(document).ready(function () {
         $overlayOne = $('.over--lay1, over--lay2'),
         $wrapperNav = $('.wrapper-nav');
 
-    //menu display   
+    //menu display  
+
     $wrapper.on('click', () => { //scrollMenu from left to the right
         if ($wrapper.hasClass('wrapper-position')) {
             $wrapper.removeClass('wrapper-position').addClass('change');
@@ -65,6 +66,7 @@ $(document).ready(function () {
 
     })
 
+
     $(window).scroll(() => {
         let scrollMe = $(this).scrollTop();
         let outer = $wrapperNav.outerHeight();
@@ -108,6 +110,7 @@ $(document).ready(function () {
             }
         })
     }
+
     let $hover = over()
 
     //END OF MENU NAV
@@ -134,11 +137,12 @@ $(document).ready(function () {
     function reverse() {
         let a = $navBox.reverse();
     }
-/******************************************BOX DISPLAY ***************/
+    /******************************************BOX DISPLAY ***************/
     $navBox = new TimelineMax({
         paused: true,
         yoyo: true
     })
+
     $navBox
         .to($main, 0.3, {
             display: 'none'
@@ -203,20 +207,25 @@ $(document).ready(function () {
         $content = $('.portfolio--box1'),
         $empty = $('.empty'),
         $svgNum = $('.svgNum text');
-    
-    
-      const controller = new ScrollMagic.Controller();
+
+
+    const controller = new ScrollMagic.Controller();
 
     $portfolioBox.each(function () {
-        
-        let ourScene = TweenMax.from($(this), 0.1, {autoAlpha: 0, scale: 0.5, y:100, ease: Power1.easeOut})
+
+        let ourScene = TweenMax.from($(this), 0.1, {
+            autoAlpha: 0,
+            scale: 0.5,
+            y: 100,
+            ease: Power1.easeOut
+        })
         let scene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 0.7,
-            reverse: false
-        }).setTween(ourScene)
-        .addTo(controller);
-            
+                triggerElement: this,
+                triggerHook: 0.7,
+                reverse: false
+            }).setTween(ourScene)
+            .addTo(controller);
+
     })
 
 
@@ -263,7 +272,8 @@ $(document).ready(function () {
                 delay: 1
             })
             TweenMax.to(content, 0.5, {
-                scale: 1.3, zIndex: 100
+                scale: 1.3,
+                zIndex: 100
             })
 
 
@@ -271,9 +281,9 @@ $(document).ready(function () {
 
 
         }, (event) => {
-             num = $(event.currentTarget).find($numbers);
-             empty = $(event.currentTarget).find($empty);
-             svg = $(event.currentTarget).find($svgNum);
+            num = $(event.currentTarget).find($numbers);
+            empty = $(event.currentTarget).find($empty);
+            svg = $(event.currentTarget).find($svgNum);
             content = $(event.currentTarget).find($content);
 
             TweenMax.set(svg, {
@@ -293,44 +303,75 @@ $(document).ready(function () {
         })
     }
     let myDisplay = displayPortfolio()
-    
+
     /******************************************LINK ACCT***************/
-    $('.button .link1').click(function(){
-    $(location).attr('href', 'mailto: michaelmabinuola@gmail.com?subject='
-                             + encodeURIComponent("Hello Mike, I love your work and I would love to get in contact with you")
-                             + "&body=" 
-                             + encodeURIComponent("This is my body")
-    );
-});
+    $('.button .link1').click(function () {
+        $(location).attr('href', 'mailto: michaelmabinuola@gmail.com?subject=' +
+            encodeURIComponent("Hello Mike, I love your work and I would love to get in contact with you") +
+            "&body=" +
+            encodeURIComponent("This is my body")
+        );
+    });
+
     
-      $('.button .link2').on('click', () => {
-        window.open("https://www.linkedin.com/in/michael-mabinuola-031138102/", "_blank")
+    $('.button .link2').on('click', () => {
+      
+        setTimeout(function(){
+            window.open("https://www.linkedin.com/in/michael-mabinuola-031138102/", "_blank");
+        }, 10)
         
+
     })
-     $('.button .link3').on('click', () => {
-        window.open("https://www.facebook.com/mabinuola", "_blank")
+    $('.button .link3').on('click', () => {
+        setTimeout(function(){
+            window.open("https://www.facebook.com/mabinuola", "_blank")
+        }, 10)
         
+
     })
-    
+
     $('.sayn').on('click', () => {
-        window.open('https://www.sayn-michaelking.com/', '_blank');
+        setTimeout(() => {
+            window.open('https://www.sayn-michaelking.com/', '_blank');
+        }, 10)
+        
     });
-    
+
     $('.bitcoin').on('click', () => {
-        window.open('https://quizzical-clarke-a9d671.netlify.com/', '_blank');
+        setTimeout(() => {
+            window.open('https://quizzical-clarke-a9d671.netlify.com/', '_blank');
+        }, 10)
     });
-    
+
     $('.movie').on('click', () => {
-        window.open('https://upbeat-banach-343649.netlify.com', '_blank');
+        setTimeout(() => {
+             window.open('https://upbeat-banach-343649.netlify.com', '_blank');
+        }, 10)
+       
     })
-    
+
     $('.blx').on('click', () => {
-        window.open('https://objective-dubinsky-a4423c.netlify.com', '_blank');
+        setTimeout(() => {
+            window.open('https://objective-dubinsky-a4423c.netlify.com', '_blank');
+        }, 10)
     })
 
+/*
+ let xhttp = new XMLHttpRequest();
 
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                
+               window.location.href = 'index.html';
+            }
+            
+            return false;
+        };
+        
+        xhttp.open("GET", "index.html", true);
+        xhttp.send();
 
-
+*/
 
 
 
