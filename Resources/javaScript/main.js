@@ -304,7 +304,8 @@ $(document).ready(function () {
     }
     let myDisplay = displayPortfolio()
 
-    /******************************************LINK ACCT***************/
+    /******LINK ACCT***************/
+    
     $('.button .link1').click(function () {
         $(location).attr('href', 'mailto: michaelmabinuola@gmail.com?subject=' +
             encodeURIComponent("Hello Mike, I love your work and I would love to get in contact with you") +
@@ -322,6 +323,8 @@ $(document).ready(function () {
         
 
     })
+    
+    
     $('.button .link3').on('click', () => {
         setTimeout(function(){
             window.open("https://www.facebook.com/mabinuola", "_blank")
@@ -329,6 +332,15 @@ $(document).ready(function () {
         
 
     })
+    
+    
+     $('.bitcoin').on('click', () => {
+        setTimeout(() => {
+            window.open('https://quizzical-clarke-a9d671.netlify.com/', '_blank');
+        }, 10)
+    });
+    
+    
 
     $('.sayn').on('click', () => {
         setTimeout(() => {
@@ -336,12 +348,9 @@ $(document).ready(function () {
         }, 10)
         
     });
+    
 
-    $('.bitcoin').on('click', () => {
-        setTimeout(() => {
-            window.open('https://quizzical-clarke-a9d671.netlify.com/', '_blank');
-        }, 10)
-    });
+   
 
     $('.movie').on('click', () => {
         setTimeout(() => {
