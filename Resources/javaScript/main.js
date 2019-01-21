@@ -305,7 +305,7 @@ $(document).ready(function () {
     let myDisplay = displayPortfolio()
 
     /******LINK ACCT***************/
-    
+
     $('.button .link1').click(function () {
         $(location).attr('href', 'mailto: michaelmabinuola@gmail.com?subject=' +
             encodeURIComponent("Hello Mike, I love your work and I would love to get in contact with you") +
@@ -314,73 +314,53 @@ $(document).ready(function () {
         );
     });
 
-    
+
     $('.button .link2').on('click', () => {
-      
-        setTimeout(function(){
-            window.open("https://www.linkedin.com/in/michael-mabinuola-031138102/", "_blank");
-        }, 10)
-        
+
+        window.open("https://www.linkedin.com/in/michael-mabinuola-031138102/", "_blank");
+
 
     })
-    
-    
+
+
     $('.button .link3').on('click', () => {
-        setTimeout(function(){
-            window.open("https://www.facebook.com/mabinuola", "_blank")
-        }, 10)
-        
+
+        window.open("https://www.facebook.com/mabinuola", "_blank")
+
 
     })
+
+
+    $('.bitcoin').on('click', () => {
     
+     window.open('https://quizzical-clarke-a9d671.netlify.com/', '_blank');
+
     
-     $('.bitcoin').on('click', () => {
-        setTimeout(() => {
-            window.open('https://quizzical-clarke-a9d671.netlify.com/', '_blank');
-        }, 10)
+
     });
-    
-    
+
+
 
     $('.sayn').on('click', () => {
-        setTimeout(() => {
-            window.open('https://www.sayn-michaelking.com/', '_blank');
-        }, 10)
         
-    });
-    
+        window.open('https://www.sayn-michaelking.com/', '_blank');
 
-   
+    });
+
+
+
 
     $('.movie').on('click', () => {
-        setTimeout(() => {
-             window.open('https://upbeat-banach-343649.netlify.com', '_blank');
-        }, 10)
-       
+         window.open('https://upbeat-banach-343649.netlify.com', '_blank');
+
     })
 
     $('.blx').on('click', () => {
-        setTimeout(() => {
-            window.open('https://objective-dubinsky-a4423c.netlify.com', '_blank');
-        }, 10)
+      
+         window.open('https://objective-dubinsky-a4423c.netlify.com', '_blank');
     })
 
-/*
- let xhttp = new XMLHttpRequest();
 
-        xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                
-               window.location.href = 'index.html';
-            }
-            
-            return false;
-        };
-        
-        xhttp.open("GET", "index.html", true);
-        xhttp.send();
-
-*/
 
 
 
