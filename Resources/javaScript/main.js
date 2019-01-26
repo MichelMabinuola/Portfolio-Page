@@ -330,6 +330,12 @@ $(document).ready(function () {
 
     })
 
+    $('.sayn').on('click', () => {
+        
+        window.open('https://www.sayn-michaelking.com/', '_blank');
+
+    });
+
 
     $('.bit').on('click', () => {
     
@@ -339,15 +345,9 @@ $(document).ready(function () {
 
     });
 
-
-
-    $('.sayn').on('click', () => {
-        
-        window.open('https://www.sayn-michaelking.com/', '_blank');
-
-    });
-
-
+    $('.wix').on('click', () => {
+        window.open('https://quizzical-elion-d554a6.netlify.com/', '_blank');
+    })
 
 
     $('.movie').on('click', () => {
