@@ -216,13 +216,13 @@ $(document).ready(function () {
 
         let ourScene = TweenMax.from($(this), 0.1, {
             autoAlpha: 0,
-            scale: 0.5,
-            y: 100,
+            scale: 0.8,
+            x: 100,
             ease: Power1.easeOut
         })
         let scene = new ScrollMagic.Scene({
                 triggerElement: this,
-                triggerHook: 0.7,
+                triggerHook: 'onEnter',
                 reverse: false
             }).setTween(ourScene)
             .addTo(controller);
