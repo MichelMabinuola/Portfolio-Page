@@ -18,14 +18,23 @@ $(document).ready(function () {
                 width: '23%',
                 ease: Power4.easeOut
             })
+
             TweenMax.to($move, 0.2, {
-                x: '-100',
+                opacity: 0.5,
                 ease: Expo.easeOut
             }, '-=0.2')
+            
+            TweenMax.to($('.wrap'), 0.2, {
+                opacity: 0.5,
+                ease: Power4.easeOut
+            })
+            
+            
             TweenMax.staggerTo($nav, 0.2, {
                 opacity: 1,
                 ease: Expo.easeOut
             }, 0.5)
+            
 
         } else {
             $wrapper.removeClass('change').addClass('wrapper-position');
@@ -33,7 +42,11 @@ $(document).ready(function () {
                 width: ''
             })
             TweenMax.to($move, 0.2, {
-                x: ''
+                opacity: 1
+            })
+            
+            TweenMax.to($('.wrap'), 0.2, {
+                opacity: 1
             })
             TweenMax.staggerTo($nav, 0.2, {
                 opacity: ''
@@ -41,12 +54,8 @@ $(document).ready(function () {
         }
 
     });
-    //arrow button clicked to scroll down
-    $arrow.on('click', () => {
-        $('html, body').animate({
-            scrollTop: ($main).offset().top
-        }, 300)
-    })
+    
+    
     $('.portfolio').on('click', () => { //portFolio onclick
         $('html, body').animate({
             scrollTop: ($main).offset().top
@@ -62,6 +71,12 @@ $(document).ready(function () {
             TweenMax.to([$arrow, $move, $main], 0.5, {
                 opacity: 1
             })
+            
+            TweenMax.to($('.wrap'), 0.2, {
+                opacity: 1
+            })
+            
+            
         }
 
     })
@@ -73,7 +88,7 @@ $(document).ready(function () {
 
         if (scrollMe >= outer) {
             $wrapperNav.css({
-                backgroundColor: '#fab131',
+                backgroundColor: '#fff',
 
             })
 
@@ -92,26 +107,7 @@ $(document).ready(function () {
         }
     })
 
-    //MENU BUTTON
-    function over() {
-        $nav.each((index, e) => {
-            if ($(e).hasClass('nav--a')) {
-                $(e).hover(() => {
-                    TweenMax.to([$arrow, $move, $main], 0.5, {
-                        opacity: 0.3
-                    })
-                }, () => {
-
-                    TweenMax.to([$arrow, $move, $main], 0.5, {
-                        opacity: 1
-                    })
-                })
-
-            }
-        })
-    }
-
-    let $hover = over()
+    
 
     //END OF MENU NAV
 
@@ -183,6 +179,7 @@ $(document).ready(function () {
     $cover.on('click', () => {
         nav();
     })
+    
     $('.about, .contact').on('click', () => {
         if ($wrapper.hasClass('change')) {
             $wrapper.removeClass('change').addClass('wrapper-position');
@@ -190,7 +187,11 @@ $(document).ready(function () {
                 width: ''
             })
             TweenMax.to($move, 0.2, {
-                x: ''
+                opacity: 1
+            })
+            
+            TweenMax.to($('.wrap'), 0.2, {
+                opacity: 1
             })
         }
         nav();

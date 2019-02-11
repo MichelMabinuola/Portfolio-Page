@@ -3,55 +3,16 @@
     line-height: 1.5em;
 } */
 
-/****/
-@media screen and (min-width: 1401px) and (min-height:900px) {
-    #Layer_1 {
-        width: 300px;
-        height: 120px;
-    }
-
-    #svg {
-        width: 900px;
-        height: 700px;
-
-    }
-
-    .cover-all h1 {
-        font-size: 8.5vw;
-        margin-top: 5vh;
-
-    }
-
-    .cover {
-        height: 80px;
-        padding-top: 26px;
-    }
-
-    .arrow--position {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #Layer_1 {
-        width: 22vw;
-    }
-
-    #svg {
-        width: 800px;
-        height: 700px;
-
-    }
-
-    .cover-all h1 {
-        margin-top: 70px;
-
-    }
-
-
-}
-
 @media screen and (max-width: 1036px) {
+    .overlay-content {
+        position: relative;
+        top: 30%;
+    }
+
+    .overlay a {
+        font-size: 30px;
+    }
+
     .all--portfolio {
         width: 100%;
         justify-content: center;
@@ -65,44 +26,26 @@
 
 
 @media screen and (max-width: 1025px) {
-    #Layer_1 {
-        width: 27vw;
-        height: 12vh;
-    }
 
-
-    .overlay a {
-        width: 90%;
-        font-size: 4vw;
-    }
-
-    .section::after {
+    .section::after,
+    .section::before {
         display: none;
     }
 
 }
 
-@media screen and (max-width: 1024px) and (min-height: 1366px) {
-    #svg {
-        width: 700px;
-        height: 300px;
 
-    }
-
-
-    .cover-all h1 {
-        font-size: 80px;
-        margin-top: 120px;
-    }
-}
 
 
 /*****/
 
 @media screen and (max-width: 900px) {
-    #svg {
-        width: 700px;
-        height: 600px;
+    .cover-all h1 {
+        font-size: 100px;
+    }
+
+    .overlay {
+        background-color: #74b9e8;
     }
 
     .about::before,
@@ -111,22 +54,40 @@
         top: 36%;
     }
 
-
-    .cover-all span {
-        font-size: 22px;
+    .works h2 {
+        width: 50%;
     }
 
-    .black,
-    .movi {
-        padding-bottom: 15px;
+    .portfolio--box1 {
+        width: 350px;
+        height: 300px;
+        top: 40%;
+        left: 45%;
     }
 
-
+    .portfolio--box1 h1 {
+        margin-top: 50px;
+        box-sizing: border-box;
+    }
 
 
 }
 
 @media screen and (max-width: 809px) {
+
+    .about:hover::before,
+    .portfolio:hover::before,
+    .contact:hover::before,
+    .about:active::before,
+    .portfolio:active::before,
+    .contact:active::before {
+        display: block;
+        animation-play-state: paused;
+    }
+
+    .portfolio--box {
+        height: 350px;
+    }
 
     .ul--1 li {
         width: 20%;
@@ -147,103 +108,72 @@
     .article--1 {
         font-size: 14px;
     }
+
+    .overlay a {
+        width: 100%;
+        color: #fab131;
+    }
+
+    .about:hover,
+    .portfolio:hover,
+    .contact:hover {
+        color: #fff;
+
+    }
 }
 
 
 /* max width 600px phone */
 @media screen and (max-width: 712px) {
-    #Layer_1 {
-        width: 250px;
-    }
 
-    #svg {
-        width: 700px;
-        height: 700px;
-    }
 
     .button button {
         font-size: 14px;
     }
 
     .cover-all h1 {
-        font-size: 50px;
-        margin-top: 100px;
-        margin-bottom: 10px;
+        font-size: 80px;
     }
 
-    .cover-all span {
-        font-size: 14px;
+    .bitn {
+        padding-top: 20px;
     }
 
-    .cover h3 {
-        text-align: center;
-        color: #fff;
-        font-size: 14px;
-    }
-
-    .box {
-        width: 100px;
-        height: 50px;
-    }
-
-    .portfolio--box {
-        height: 350px;
-    }
-
-    .movi,
-    .black {
-        padding-top: 18px;
-    }
 
 
 
 }
 
 @media screen and (max-width: 600px) {
-    #svg {
-        width: 600px;
-        height: 600px;
-    }
-
-    .arrow--position {
-        height: 60px;
-        bottom: 1px;
-        left: 0;
-    }
-
-    .about:hover::before,
-    .portfolio:hover::before,
-    .contact:hover::before,
-    .about:active::before,
-    .portfolio:active::before,
-    .contact:active::before {
-        display: block;
-        animation-play-state: paused;
-    }
-
-    .arrow--position {
-        display: none;
+    .works h2 {
+        width: 100%;
     }
 
     .portfolio--box {
         height: 300px;
     }
 
+    .overlay a {
+        font-size: 20px;
+    }
     .svgNum {
         width: 20vh;
         height: 15vh;
     }
 
-    .ul--1 li {
-        width: 20%;
-        margin-top: -30px;
-        margin-left: -10px;
-        font-size: 10px;
+     .over--lay1{
+        display: none;
     }
-
-    .article--1,
-    .span {
-        font-size: 10px;
+    
+    .over--lay2{
+        width: 100%;
+        
+    } 
+    
+    .button button {
+        width: 100%;
+        font-size: 20px;
+        border-color: #fff;
     }
 
 
@@ -252,285 +182,104 @@
 }
 
 @media screen and (max-width: 551px) {
-    #svg {
-        width: 500px;
-        height: 650px;
-
+    .cover-all span{
+        font-size: 28px;
+    }
+    .logo-svg{
+    width: 300px;
+       
+}
+    .wrapper-bar {
+        top: 20px;
     }
 
-    .button button {
-        width: 18vw;
-        height: 50px;
-    }
+   
 
 
-    .h1--tag {
-        font-size: 14px;
-    }
-
-
-    .portfolio--box1 h1 {
-        margin-top: 50px;
-        font-size: 30px;
-    }
-
-    .movi {
-        padding-top: 18px;
-    }
 
 
 }
 
-@media screen and (max-width: 475px) {
-    #svg {
-        width: 400px;
-        height: 600px;
-    }
-
-    .weblink--site {
-        width: 50%;
-    }
-
-    .portfolio--box1 h1 {
-        font-size: 22px;
-        margin-top: 40px;
-    }
-}
-
-@media only screen and (max-width:414px) and (max-height: 736px) {
-    #svg {
-        width: 400px;
-        height: 700px;
-    }
-
-    .works {
-        margin-bottom: 20px;
-    }
-
-    .black,
-    .movi {
-        padding-bottom: 20px;
-    }
-
-    .article--1,
-    .span {
-        font-size: 8px;
-    }
-
-    .ul--1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .ul--1 li {
-        width: 30%;
-        margin-top: -30px;
-        margin-left: -10px;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    #Layer_1 {
-        width: 180px;
-        height: 100px;
-    }
-
-    .cover-all h1 {
-        margin-top: 120px;
-        font-size: 40px;
-
-    }
-
-
-    .arrow--position {
-        display: none;
-    }
-
-    figcaption,
-    .button button {
-        font-size: 8px;
-    }
-
-    .portfolio--box {
-
+@media screen and (max-width: 498px) {
+     .portfolio--box {
         height: 250px;
     }
 
-    .portfolio--box h1 {
-        margin-top: 40px;
-        font-size: 30px;
+    .weblink--site {
+        width: 300px;
     }
+    .cover-all span{
+        font-size: 20px;
+    }
+    .section{
+        width: 80%;
+    }
+    .cover-all h1 {
+        font-size: 60px;
+    }
+}
 
+
+
+@media screen and (max-width: 414px) {
+.logo{
+    padding: 0 ;
+}
     .svgNum {
         width: 18vh;
 
     }
-
-    .ul--1 li {
-        width: 30%;
-        margin-top: -30px;
-        margin-left: -10px;
+    .portfolio--box1 h1{
+        margin-top: 60px;
+        font-size: 40px;
     }
+    
+    .weblink--site{
+        height: 80%;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+
 
 }
-
 
 
 @media screen and (max-width: 399px) {
-
-    .cover-all h1 {
-        font-size: 40px;
-
-    }
-
-    .arrow--position {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width:375px) and (max-height: 667px) {
-    .box1 {
-        top: 40%;
-    }
-
-    #svg {
-        width: 400px;
-        height: 580px;
-
-    }
-
-    .works {
-        margin-bottom: 20px;
-    }
-
-    .cover-all h1 {
-        font-size: 40px;
-        margin-top: 12px;
-
-    }
-}
-
-@media screen and (max-width: 360px) and (max-height:640px) {
-    #Layer_1 {
-        width: 28vw;
-    }
-
-    #svg {
-        width: 300px;
-        height: 580px;
-
-    }
-
-    .box1 {
-        top: 30%;
-    }
-
-    .cover-all h1 {
-        font-size: 40px;
-        margin-top: 12px;
-
-    }
-
     .box {
-        margin-top: 2px;
-        width: 60px;
-        height: 38px;
-    }
-
-    .cover {
-        padding-top: 12px;
+        width: 100px;
+        height: 50px;
     }
 
     .cover h3 {
-        font-size: 12px;
+        font-size: 16px;
     }
 
-    .arrow--position {
-        display: none;
+    .section{
+        width: 95%;
+    }
+    .cover-all h1 {
+        font-size: 50px;
+    }
+    
+    .overlay a, .works h2 {
+        font-size: 16px;
     }
 
 
-
-    .h1--tag {
-        font-size: 12px;
-    }
-
-    .article--1,
-    .span {
-        font-size: 8px;
-    }
-
-    .ul--1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .ul--1 li {
-        width: 30%;
-        margin-top: -30px;
-        margin-left: -10px;
-    }
-
-    .button button {
-        width: 18vw;
-        height: 40px;
-    }
-
-    .works {
-        margin-bottom: 20px;
-    }
-
-    .black,
-    .movi {
-        padding-bottom: 20px;
-    }
 }
+
+
 
 @media screen and (max-width: 320px) {
-    .cover-all h1 {
-        font-size: 20px;
-        margin-top: 12px;
+    .cover-all h1 {    
+        font-size: 40px;
 
     }
-
-    figcaption {
-        font-size: 8px;
-    }
-
-    .ul--1 li {
-        margin-top: -20px;
-    }
-
 
 
 }
 
 
 
-/* iphone5 portrait */
 
-/**********************************************MAIN PORTFOLIO SECTION ********************/
-/************portrait iphon5  **********/
-@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    .section {
-        margin-top: 10;
-        padding: 10px 0 0 0;
-    }
-
-    .all--portfolio {
-        margin-top: 0;
-    }
-}
-
-/*********************phones with max width up to 375px *********/
-@media screen and (max-width: 375px) {
-    .section {
-        margin-top: 10;
-        padding: 10px 0 0 0;
-    }
-
-    .all--portfolio {
-        margin-top: 0;
-    }
-}
